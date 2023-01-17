@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+--jaune:#FAB637;
+--rouge:#FF4848;
+--orange:#CC6119;
+--gris:#ECEFF3;
+--grisfonce:#232628;
+--bleu:#6C98E1;
+--titre:'Montserrat', sans-serif;
+--texte:'Open Sans', sans-serif;
+}
+
+body { margin: 0; padding: 0; }
+
+.infos{
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height:100px;
+    background-color:var(--grisfonce);
+    font-family: var(--titre);
+    display: flex;
+    justify-content: center;
+}
+
+.nom, .adresse, .tel, .horaires, .social {
+    display: flex;
+}
+
+.nom{
+    color:white;
+    font-weight: 700;
+    font-size: 3vw;
+}
