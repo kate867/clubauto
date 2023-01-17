@@ -5,33 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="accueil.css">
-    <script src="https://kit.fontawesome.com/2fd755c6b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+    
     <title>Club Auto</title>
 </head>
 <body>
     
     <header>
+<!----------------------------MENU RESPONSIVE---------------------->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Accueil<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Vente</a>
+                <a class="nav-item nav-link" href="#">Location</a>
+                <a class="nav-item nav-link disabled" href="#">Contact</a>
+              </div>
+            </div>
+          </nav>
+<!----------------------------END MENU RESPONSIVE---------------------->
         
         <div class="infos">
             <div class="nom">CLUB AUTO</div>
             <div class="adresse">
-                <img src="images/icone-adresse.png" alt="icone localisation" style="width: 40px; height: 38px;">
-                ADRESSE :<br> avenue Charles de Gaulle<br>75000Paris
+                <img src="images/icone-adresse.png" alt="icone localisation" style="width: 40px; height: 38px; margin-right: 10px;">
+                <div>
+                    <span id="infostitre">ADRESSE :</span><br> avenue Charles de Gaulle<br>75000Paris
+                </div>
             </div>
             <div class="tel">
-                <img src="images/icon-telephone.png" alt="icone localisation" style="width: 40px; height: 38px;">
-                TELEPHONE :<br>01 23 45 67 89</div>
-            <div class="horaire">OUVERTURE : Du lundi au samedi<br> HORAIRES : De 9h à 17h</div>
+                <img src="images/icon-telephone.png" alt="icone localisation" style="width: 40px; height: 38px; margin-right: 10px;">
+                <div> 
+                    <span id="infostitre">TELEPHONE :</span><br> <span style="font-weight: bold;"> 01 23 45 67 89</span>
+                </div>
+            </div>
+            <div class="horaire">
+                <div> 
+                    <span id="infostitre">OUVERTURE :</span> <span style="font-weight: bold;">Du lundi au samedi<br> </span>
+                    <span id="infostitre">HORAIRES :</span> <span style="font-weight: bold;">De 9h à 17h</span>
+                </div>
+            </div>
             <div class="social">
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-facebook-f"></i>
             </div>
+            
         </div>
+
         <nav class="menu"></nav>
         <div class="banniere"></div>
         <div class="titrepage"></div>
     </header>
 
-    
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+<script src="https://kit.fontawesome.com/2fd755c6b2.js" crossorigin="anonymous"></script>    
 </body>
 </html>
