@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="accueil.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
 </head>
 
     
@@ -15,20 +16,17 @@
     
     <header>
 <!----------------------------MENU RESPONSIVE---------------------->
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Accueil<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Vente</a>
-                <a class="nav-item nav-link" href="#">Location</a>
-                <a class="nav-item nav-link disabled" href="#">Contact</a>
-              </div>
-            </div>
-          </nav>
+<nav class="responsive-nav">
+    <a class="pull" href="#"></a>
+    <div class="responsive-menu">
+      <ul class="clearfix">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Vente</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 <!----------------------------END MENU RESPONSIVE---------------------->
         
         <div class="infos">
@@ -58,14 +56,167 @@
             
         </div>
 
-        <nav class="menu"></nav>
+        <nav class="menu">
+            <a href="">CONTACT</a>
+            <a href="">LOCATION</a>
+            <a href="">VENTE</a>
+            <a href="">ACCUEIL</a>
+        </nav>
+
         <div class="banniere"></div>
-        <div class="titrepage"></div>
+        
+        <div class="titrepage">CLUB AUTO <span style="color: var(--orange);" >LE MEILLEUR DE L'AUTOMOBILE<br><br></span></div>
     </header>
 
+<section class="bienvenue">
+
+        <div class="first"></div>
+
+        <div class="second">
+            <h1 class="titres">BIENVENUE CHEZ <span style="color: var(--orange);" >CLUB AUTO</span></h1>
+            <h3 class="soustitres">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+            <p class="corpstexte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aIiqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aIiqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aIiqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
+            </div>
+
+        <div class="third">
+            <h1 class="titres">LE MEILLEUR DE L'AUTOMOBILE</h1>
+            <hr class="separateur">
+            <p class="corpstexte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aIiqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul>
+                <li class="corpstexte">Lorem ipsum dolor sit amet</li>
+                <li class="corpstexte">Lorem ipsum dolor sit amet</li>
+                <li class="corpstexte">Lorem ipsum dolor sit amet</li>
+                <li class="corpstexte">Lorem ipsum dolor sit amet</li>
+                <li class="corpstexte">Lorem ipsum dolor sit amet</li>
+            </ul>
+        </div>
+
+        <div class="fourth"></div>
+
+</section>
+
+<section class="voussouhaitez">
+    <div class="louer">
+        <h2 class="titres">VOUS SOUHAITEZ LOUER ?</h2>
+        <p class="corpstexte" style=" color:white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, suscipit mollitia voluptatibus corrupti cumque porro provident sed. Illo sint praesentium dolores modi, sunt architecto! Voluptate perspiciatis, iure porro repellendus hic labore.</p>
+    </div>
+    <div class="acheter">
+        <h2 class="titres">VOUS SOUHAITEZ ACHETER ?</h2>
+        <p class="corpstexte" style=" color:white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, suscipit mollitia voluptatibus corrupti cumque porro provident sed. Illo sint praesentium dolores modi, sunt architecto! Voluptate perspiciatis, iure porro repellendus hic labore.</p>
+    </div>
+</section>
+
+<section class="vehiculesrecents">
+    <h1>VEHICULES RECENTS</h1>
+    <hr>
+    <div class="containervoitures">
+
+        <div class="voiture">
+            <div class="imagevoiture"></div>
+            <div class="legende">
+                <div class="legendecontainer">
+                    <h3>BMW 5351, NAVI,<br> LEATHER, ABS</h3>
+                    <div class="prix" style="color: white;">5 500€</div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="voiture voituretwo">
+            <div class="imagevoiture"></div>
+            <div class="legende">
+                <div class="legendecontainer">
+                    <h3>BMW 5351, SPORT,<br> LINE BODY KIT</h3>
+                    <div class="prix" style="color: white;">8 000€</div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="voiture voiturethree">
+            <div class="imagevoiture"></div>
+            <div class="legende">
+                <div class="legendecontainer">
+                    <h3>FORD EXPLORER,<br> 2015, 4WD</h3>
+                    <div class="prix2" style="color: white;">
+                       <span class="oldprice">9 000€</span> <br>
+                        8 200€</div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="pourquoi">
+    <h1 class="titrepourquoi" style="color:black!important;">Pourquoi nous choisir ?</h1>
+    <div class="argumentcontainer">
+        <div class="argument">
+            <div class="icone"><img src="images/icon1.png" alt=""></div>
+            <div><h3 class="soustitres">FINANCEMENT</h3><p class="corpstexte"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde dicta temporibus veniam earum culpa eius adipisci. Minima saepe, quia dicta eligendi possimus recusandae eos temporibus illo, doloribus ea, sint molestiae consectetur sunt exercitationem omnis quibusdam ut. Vitae, ipsum non.</p> </div>
+        </div>
+        <div class="argument">
+            <div class="icone"><img src="images/icon2.png" alt=""></div>
+            <div><h3 class="soustitres">REACTIVITE DE L'EQUIPE TECHNIQUE</h3><p class="corpstexte"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde dicta temporibus veniam earum culpa eius adipisci. Minima saepe, quia dicta eligendi possimus recusandae eos temporibus illo, doloribus ea, sint molestiae consectetur sunt exercitationem omnis quibusdam ut. Vitae, ipsum non.</p> </div>
+        </div>
+        <div class="argument">
+            <div class="icone"><img src="images/icon3.png" alt=""></div>
+            <div><h3 class="soustitres">A L'ECOUTE DE NOTRE CLIENTELE</h3><p class="corpstexte"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde dicta temporibus veniam earum culpa eius adipisci. Minima saepe, quia dicta eligendi possimus recusandae eos temporibus illo, doloribus ea, sint molestiae consectetur sunt exercitationem omnis quibusdam ut. Vitae, ipsum non.</p> </div>
+        </div>
+        <div class="argument">
+            <div class="icone"><img src="images/icon4.png" alt=""></div>
+            <div><h3 class="soustitres">SERVICE & MAINTENANCE</h3><p class="corpstexte"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde dicta temporibus veniam earum culpa eius adipisci. Minima saepe, quia dicta eligendi possimus recusandae eos temporibus illo, doloribus ea, sint molestiae consectetur sunt exercitationem omnis quibusdam ut. Vitae, ipsum non.</p> </div>
+        </div>
+    </div>
+
+    <button class="contacteznous">CONTACTEZ-NOUS</button>
+    
+</section>
+
+<section class="clubauto">
+    <div class="louer clubautobox1">
+        <h2 class="titres">CLUB AUTO<br> <span style="color:white">VENTE ET LOCATION</span> </h2>
+        <p class="corpstexte"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, suscipit mollitia voluptatibus corrupti cumque porro provident sed. Illo sint praesentium dolores modi, sunt architecto! Voluptate perspiciatis, iure porro repellendus hic labore.</p>
+    </div>
+    <div class="acheter clubautobox2"></div>
+</section>
+
+<footer>
+    <div class="footercontent">
+        <div class="footerinfos"> <h3 class="soustitres"> <span style="color: var(--bleu);"> CLUB</span> AUTO</h3> <p class="corpstexte"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fuga ducimus ab assumenda explicabo repudiandae animi accusamus quaerat aliquid rem! </p> 
+        </div>
+        <div class="footerinfos"><h3 class="soustitres">HORAIRES D'OUVERTURE</h3> <p class="corpstexte">Lundi - Samedi : 9h00 - 17h00<br>Dimanche et jours fériés : fermé</p> 
+        </div>
+        <div class="footerinfos"> <h3 class="soustitres">NEWSLETTER</h3>
+            <div class="wrap">
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="Entrez votre e-mail">
+                   <button type="submit" class="searchButton">
+                     <i class="fa-sharp fa-solid fa-rss"></i>
+                  </button>
+                </div>
+            </div>
+            <p class="corpstexte" style="font-weight: lighter; color: grey;">Inscrivez-vous pour recevoir les dernières offres</p>
+        </div>
+        <div class="footerinfos">
+            <h3 class="soustitres">RESEAUX SOCIAUX</h3>
+            <img src="images/004-facebook.png" alt="">
+            <img src="images/001-twitter.png" alt="">
+            <img src="images/003-instagram.png" alt="">
+            <img src="images/005-google-plus.png" alt="">
+            <img src="images/002-youtube.png" alt="">
+        </div>
+    </div>
+    <hr class="footerseparator">
+    <p class="corpstexte copyright">Copyright &#169; Club Auto - Tous droits réservés</p>
+</footer>
 
 
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+
+<script src="script.js"></script>
 <script src="https://kit.fontawesome.com/2fd755c6b2.js" crossorigin="anonymous"></script>    
 </body>
 </html>
