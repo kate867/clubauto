@@ -1,0 +1,138 @@
+@import url(headerfooter.css);
+
+.bannierecontact{
+        width: 100%;
+        height:calc(100vh - 200px) ;
+        background-image: url(images/vehicule3contact.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+}
+
+.contactcontainer{
+    padding: 50px 70px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 80%;
+    height: 450px;
+    background-color: white;
+    top:250px;
+    left: 10%;
+    box-shadow: 7px 10px 29px -6px rgba(0,0,0,0.56);
+-webkit-box-shadow: 7px 10px 29px -6px rgba(0,0,0,0.56);
+-moz-box-shadow: 7px 10px 29px -6px rgba(0,0,0,0.56);
+}
+
+.formfields{
+    display: flex;
+    gap:20px
+}
+
+.infoscontact, .messagecontact{
+    height:200px;
+    width:200px;
+}
+
+.infoscontact{
+    flex-grow: 7;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.messagecontact{
+    flex-grow: 2;
+}
+
+.prenom, .mailtel{
+    width:90%;
+    height:80px;
+}
+
+.infosolo{
+    display: flex;
+    justify-content: left;
+    gap:40px;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family: var(--texte);
+    font-weight: bold;
+}
+
+input{
+    border: none;
+    background-color: var(--gris);
+    height: 40px;
+    border-radius: 1px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 7px;
+    color: gray;
+    
+}
+
+textarea{
+    border: none;
+    background-color: var(--gris);
+    font-family: var(--texte);
+    color:gray;
+    resize: none;
+    max-height: 140px;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------RESPONSIVE--------------------- */
+
+
+@media only screen and (max-width: 1070px) { 
+
+.bannierecontact{
+    height: 110vh;
+}
+
+.contactcontainer{
+    padding: 30px 30px;
+}
+  
+.contactcontainer, .infoscontact, .messagecontact{
+    height: fit-content;
+}   
+
+.infoscontact{
+    width:240px;
+}
+    
+.formfields{
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.prenom, .mailtel{
+height: fit-content;
+width: 100%;
+}
+
+.infosolo{
+flex-direction: column;
+}
+
+input, .messagecontact{
+    width: 100%;
+}
+
+
+
+}
+

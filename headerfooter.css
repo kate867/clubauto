@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --jaune:#FAB637;
+    --rouge:#FF4848;
+    --orange:#CC6119;
+    --gris:#ECEFF3;
+    --grisfonce:#232628;
+    --bleu:#6C98E1;
+    --titre:'Montserrat', sans-serif;
+    --texte:'Open Sans', sans-serif;
+    }
+    
+    body { margin: 0; padding: 0; }
+
+/* ---------------------------RESPONSIVE NAVBAR------------------- */
+
+.responsive-nav:after {
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    width: 24px;
+    height: 4px;
+    overflow: hidden;
+    content: "";
+    border-top: 5px solid #6C98E1;
+    border-bottom: 14px double #6C98E1;
+    pointer-events: none;
+}
+.responsive-nav .pull {
+    display: block;
+    width: 100%;
+    height: 42px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+    padding: 12px 20px 14px;
+    text-transform: uppercase;
+}
+.responsive-nav > div {
+    display: none;
+}
+.responsive-nav > div ul {
+    background-color: #353535;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.responsive-nav > div ul li {
+    float: left;
+    width: 100%;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid #262626;
+}
+.responsive-nav > div ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 9px;
+    color: #fff;
+    text-decoration: none;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;}
+
+/* -------------------- FIN RESPONSIVE NAVBAR ----------------------- */
+
+.responsive-nav {
+    display: none;
+}
+
+.titres, .soustitres{
+	font-family: var(--titre);
+	font-weight: bold;
+}
+
+.titres{
+	font-size: 1.2em;
+}
+
+.soustitres{
+	font-size: 0.8em;
+}
+
+.corpstexte{
+	font-family: var(--texte);
+	font-size: 0.8em;
+}
+
+.infos, .titrepage{
+    box-sizing: border-box;
+    width: 100%;
+    height:100px;
+    background-color:var(--grisfonce);
+    font-family: var(--titre);}
+
+.infos{
+	padding: 30px 50px 0 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.nom, .adresse, .tel, .horaire, .social {
+    display: flex;
+    color: white;
+    font-size: 0.8em ;
+}
+
+.nom {
+    color:white;
+    font-weight: 700;
+    font-size: 2em;
+	white-space: nowrap;
+}
+
+#infostitre {
+    color: var(--orange);
+}
+
+.fa-twitter, .fa-facebook-f{
+    font-size: 20px;
+    margin: 0 20px 0 20px;
+}
+
+.menu{
+background-color: rgba(255, 255, 255, 0.5);
+height: 50px;
+width: 100%;
+position: absolute;
+box-sizing: border-box;
+padding-right: 10%;
+z-index: 100;
+}
+
+.menu a{
+	text-decoration: none;
+	font-family: var(--titre);
+	font-size: 0.9em;
+	font-weight: bold;
+	color: black;
+	float: right;
+	padding: 0 20px 0 20px;
+	line-height: 3.5;
+}
+
+.menu a:hover{
+	background-color: var(--orange);
+	color: white;
+}
+
+
+
+
+/* ------------------------------ FOOTER ----------------------------- */
+footer{
+	width: 100%;
+	height:300px;
+	background-color: var(--grisfonce);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.footercontent{
+	display: flex;
+	justify-content: space-around;
+}
+
+.footerinfos{
+	height: 150px;
+	width : 200px;
+	color:white;
+}
+
+.footerinfos img{
+	filter: invert(100%);
+}
+
+.search {
+	width: 100%;
+	position: relative;
+	display: flex;
+	box-shadow: 0px 2px grey;
+  }
+  
+  .searchTerm {
+	width: 100%;
+	padding: 5px;
+	height: 23px;
+	border-bottom : 1px solid grey;
+  }
+  
+  .searchButton {
+	width: 40px;
+	height: 36px;
+	background: #CC6119;
+	border:none;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+  }
+
+  .footerseparator{
+	width:75%;
+  }
+
+  .copyright{
+	text-align: center;
+	color: grey;
+  }
+
+
+
+/* ------------------------------RESPONSIVE---------------------------- */
+
+/* HEADER-------------------------------- */
+@import "compass/css3";
+
+ @media only screen and (max-width: 1070px) { 
+    
+* {
+	 box-sizing: border-box;
+	 -webkit-box-sizing: border-box;
+}
+ .responsive-nav {
+	 position: relative;
+	 background-color: var(--grisfonce);
+	 display: none;
+	 width: 100%;
+     font-family: var(--texte);
+}
+	 .responsive-nav {
+		 display: block;
+	}
+
+.nom, .adresse,.horaire, .social, .menu, .banniere {
+	display: none;
+}
+
+.infos{
+	justify-content: left;
+}
+
+
+
+/* FOOTER------------------------------ */
+
+footer, .footerinfos{
+	height: fit-content;
+}
+
+.footerinfos{
+	width: 90%;
+}
+
+.footercontent{
+	flex-direction: column;
+	align-items: center;
+}
+
+.searchTerm{
+	height: 36px;
+}
+
+
+
+}

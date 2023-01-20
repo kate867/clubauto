@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+
+ <header-component></header-component>
+
+
+<div class="contactcontainer">
+    <h1 class="titres">CONTACTEZ-NOUS</h1>
+    <div class="formfields">
+        <div class="infoscontact">
+            <div class="prenom">
+                <form class="infosolo">
+                    <div>
+                        <label for="fname">Prénom*</label><br>
+                        <input type="text" id="fname" name="fname" value="Entrez votre prénom">
+                    </div>
+                    <div>
+                        <label for="lname">Nom*</label><br>
+                        <input type="text" id="lname" name="lname" value="Entrez votre nom">
+                    </div>
+                </form>
+            </div>
+            <div class="mailtel">
+                <form class="infosolo">
+                    <div>
+                        <label for="fname">Email*</label><br>
+                        <input type="text" id="fname" name="fname" value="Entrez une adresse mail valide">
+                    </div>
+                    <div>
+                        <label for="lname">Téléphone*</label><br>
+                        <input type="text" id="lname" name="lname" value="Phone Number">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="messagecontact">
+            <form class="textfield">
+                <label for="fname">Prénom*</label><br>
+                <textarea name="message" rows="10" cols="30">Ecrivez votre message</textarea>   
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<footer-component></footer-component>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/2fd755c6b2.js" crossorigin="anonymous"></script>        
+</body>
+</html>
