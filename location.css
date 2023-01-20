@@ -1,0 +1,10 @@
+@import url(headerfooter.css);
+
+.bannierecontact{
+        width: 100%;
+        height:calc(100vh - 200px) ;
+        background-image: url(images/vehicule3contact.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+}

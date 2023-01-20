@@ -30,15 +30,13 @@
 
 .infoscontact, .messagecontact{
     height:200px;
-    width:200px;
+    width:fit-content;
 }
 
 .infoscontact{
-    flex-grow: 7;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: center;
 
 }
 
@@ -47,7 +45,7 @@
 }
 
 .prenom, .mailtel{
-    width:90%;
+    width:fit-content;
     height:80px;
 }
 
@@ -86,9 +84,24 @@ textarea{
     color:gray;
     resize: none;
     max-height: 140px;
-    margin-top: 10px;
+    margin-top: 7px;
     padding: 10px;
     box-sizing: border-box;
+}
+
+button{
+    width:150px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: var(--bleu);
+    border-radius: 3px;
+    box-shadow: -1px -2px 2px 3px rgba(0,0,0,0.1) inset;
+-webkit-box-shadow: -1px -2px 2px 3px rgba(0,0,0,0.1) inset;
+-moz-box-shadow: -1px -2px 2px 3px rgba(0,0,0,0.1) inset;
+font-family: var(--texte);
+font-weight: bold;
+color: white;
 }
 
 
