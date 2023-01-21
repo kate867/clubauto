@@ -2,9 +2,129 @@
 
 .bannierecontact{
         width: 100%;
-        height:calc(100vh - 200px) ;
-        background-image: url(images/vehicule3contact.jpg);
+        height:200px ;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/vente-location.jpg');
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
 }
+
+.pagecontent{
+    margin: 30px 10%;
+}
+
+.filtres{
+    width: 250px;
+    height:fit-content;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 250px;
+    right: 100px;
+    box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.5);
+-moz-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.5);
+}
+
+.titrefiltre{
+    width: 100%;
+    height:80px;
+    background-color: var(--grisfonce);
+    color: white;
+    font-family: var(--titre);
+    font-size: 0.6em;
+    display: flex;
+    gap:20px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.margeprix{
+    display: flex;
+    gap: 20px;
+}
+
+.margeprix p{
+    font-family: var(--texte);
+    color: gray;
+    background-color: var(--gris);
+    padding: 10px 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#reinitialiser{
+    border: none;
+    background-color: var(--bleu);
+    padding: 15px;
+    margin-top: 30px;
+    font-family: var(--titre);
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 1px -1px 3px 0px rgba(0,0,0,0.5) inset;
+-webkit-box-shadow: 1px -1px 3px 0px rgba(0,0,0,0.5) inset;
+-moz-box-shadow: -1px -1px 3px 0px rgba(0,0,0,0.5) inset;
+}
+
+.locationtitre{
+    position: absolute;
+    top:180px;
+    left:100px;
+    color: white;
+    font-size: 2em;
+}
+
+.parametres{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 20px;
+}
+
+.ordre{
+    font-family: var(--texte);
+}
+
+#cars{
+    border: none;
+    background-color: var(--gris);
+    height: 35px;
+    padding: 5px;
+}
+
+.voitureliste{
+    width: calc(100% - 300px);
+}
+
+h2{
+    margin: 0px!important;
+}
+
+.savoirplus{
+    text-decoration: none;
+    font-family: var(--texte);
+    font-weight: bold;
+    font-size: 0.8em;
+    color: black;
+}
+
+.boitedescription{
+    display: flex;
+    gap:20px;
+    align-items: flex-start;
+}
+
+#prix{
+    font-family: var(--titre);
+    background-color: var(--bleu);
+    padding: 8px;
+    color: white;
+    width: 100px;
+    text-align: right;
+    float: right;
+    font-size: 0.8em;
+}
+
+h1{margin: 0px;}

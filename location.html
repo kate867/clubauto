@@ -4,21 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="components/header.js"></script>
     <script src="components/footer.js"></script>
     <link rel="stylesheet" href="headerfooter.css">
     <link rel="stylesheet" href="location.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/nouislider/dist/nouislider.css">
+    <title>Club Auto Location</title>
 </head>
 <body>
  <header-component></header-component>
 
+ <div class="pagecontent">
+    <h1 class="locationtitre titres">LOCATION</h1>
+
+    <aside class="filtres">
+        <div class="titrefiltre">
+            <img src="images/icone-voiture.png" style="height:30px" alt="">
+            <h2>Rechercher</h2>
+        </div>
+        <div class="parametres">
+            <select name="cars" id="cars">
+                <option value="volvo">Type</option>
+                <option value="saab">manuelle</option>
+            </select>
+
+            <select name="cars" id="cars">
+                <option value="volvo">Carburant</option>
+                <option value="saab">Diesel</option>
+            </select>
+
+            <select name="cars" id="cars">
+                <option value="volvo">Marque</option>
+                <option value="saab">BMW</option>
+            </select>
+
+            <select name="cars" id="cars">
+                <option value="volvo">Modèle</option>
+                <option value="saab">535i</option>
+            </select>
+
+            <select name="cars" id="cars">
+                <option value="volvo">Kilométrage maximal</option>
+                <option value="saab">10000km</option>
+            </select>
+
+            <select name="cars" id="cars">
+                <option value="volvo">Ancienneté</option>
+                <option value="saab">5 ans</option>
+            </select>
+
+            <h3 class="titres" style="font-size: 0.8em;">Prix</h3>
+
+            <div id="slider"></div>
+
+            <div class="margeprix">
+                <p>2000</p>
+                <p>80000</p>
+            </div>
+
+            <button id="reinitialiser">R&EacuteINITIALISER</button>
+           
+        </div>
+    </aside>
+
+    <div class="ordre">
+        ORDRE :
+        <select name="cars" id="cars">
+            <option value="volvo">Prix : croissant</option>
+            <option value="saab">Prix : décroissant</option>
+        </select>
+     </div> 
+
+    <section class="voitureliste">
+        <hr style="margin: 30px 0px;">
+        <div class="boitedescription">
+            <img src="images/vehicule2.jpg" alt="" style="height:200px;">
+            <div class="description">
+                <div id="prix"><h1>20€/jour</h1></div> 
+                <h2 class="titres">BMW 535i, Navi, Leather, ABS</h2>
+                <p class="corpstexte">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In iusto illo libero voluptatem dolor consectetur maxime beatae sunt iste suscipit quis, eveniet cumque illum necessitatibus doloribus natus a ducimus exercitationem commodi aut officia cupiditate. Alias, nesciunt debitis. Sequi soluta aperiam nobis. Dicta, velit! Esse est dolores corporis deserunt. Architecto, minima.</p>
+                <a class="savoirplus" href="#"> >> En savoir plus << </a>
+                
+            </div>
+        </div>    
+    </section>
+
+    <section class="voitureliste">
+        <hr style="margin: 30px 0px;">
+        <div class="boitedescription">
+            <img src="images/vehicule2.jpg" alt="" style="height:200px;">
+            <div class="description">
+                <div id="prix"><h1>20€/jour</h1></div> 
+                <h2 class="titres">BMW 535i, Navi, Leather, ABS</h2>
+                <p class="corpstexte">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In iusto illo libero voluptatem dolor consectetur maxime beatae sunt iste suscipit quis, eveniet cumque illum necessitatibus doloribus natus a ducimus exercitationem commodi aut officia cupiditate. Alias, nesciunt debitis. Sequi soluta aperiam nobis. Dicta, velit! Esse est dolores corporis deserunt. Architecto, minima.</p>
+                <a class="savoirplus" href="#"> >> En savoir plus << </a>
+                
+            </div>
+        </div>    
+    </section>
+
+    <section class="voitureliste">
+        <hr style="margin: 30px 0px;">
+        <div class="boitedescription">
+            <img src="images/vehicule2.jpg" alt="" style="height:200px;">
+            <div class="description">
+                <div id="prix"><h1>20€/jour</h1></div> 
+                <h2 class="titres">BMW 535i, Navi, Leather, ABS</h2>
+                <p class="corpstexte">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In iusto illo libero voluptatem dolor consectetur maxime beatae sunt iste suscipit quis, eveniet cumque illum necessitatibus doloribus natus a ducimus exercitationem commodi aut officia cupiditate. Alias, nesciunt debitis. Sequi soluta aperiam nobis. Dicta, velit! Esse est dolores corporis deserunt. Architecto, minima.</p>
+                <a class="savoirplus" href="#"> >> En savoir plus << </a>
+                
+            </div>
+        </div>    
+    </section>
+
+    <section class="voitureliste">
+        <hr style="margin: 30px 0px;">
+        <div class="boitedescription">
+            <img src="images/vehicule2.jpg" alt="" style="height:200px;">
+            <div class="description">
+                <div id="prix"><h1>20€/jour</h1></div> 
+                <h2 class="titres">BMW 535i, Navi, Leather, ABS</h2>
+                <p class="corpstexte">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In iusto illo libero voluptatem dolor consectetur maxime beatae sunt iste suscipit quis, eveniet cumque illum necessitatibus doloribus natus a ducimus exercitationem commodi aut officia cupiditate. Alias, nesciunt debitis. Sequi soluta aperiam nobis. Dicta, velit! Esse est dolores corporis deserunt. Architecto, minima.</p>
+                <a class="savoirplus" href="#"> >> En savoir plus << </a>
+                
+            </div>
+        </div>    
+    </section>
 
 
- 
+
+ </div>
 
  <footer-component></footer-component>
-
-    
+<script src="node_modules/nouislider/dist/nouislider.js"></script>
+ <script src="script.js"></script>
+<script src="https://kit.fontawesome.com/2fd755c6b2.js"></script>   
 </body>
 </html>
