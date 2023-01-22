@@ -40,6 +40,10 @@
     align-items: center;
 }
 
+.imagelocation{
+    height:200px;
+}
+
 .margeprix{
     display: flex;
     gap: 20px;
@@ -128,3 +132,56 @@ h2{
 }
 
 h1{margin: 0px;}
+
+/* ---------------------RESPONSIVE--------------------- */
+
+
+@media only screen and (max-width: 1070px) { 
+
+.pagecontent{
+    margin:0px 5% 30px;
+}
+
+.filtres{
+    position: relative;
+    width: 100%;
+    top:-50px;
+    right:0px;
+}
+
+.parametres{
+    padding: 40px;
+}
+
+.titreordre{display: none;}
+
+.voitureliste{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.voitureliste hr{
+    width:100%
+}
+
+.ordre{
+    width: 90%;
+    margin: 0 5%;
+}
+
+.boitedescription{
+    flex-direction: column;
+}
+
+.imagelocation{
+    width:100%;
+    height: auto;
+}
+
+#prix{
+    position: relative;
+    top:-60px;
+}
+
+
+}

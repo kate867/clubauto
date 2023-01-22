@@ -12,9 +12,9 @@ class Header extends HTMLElement {
         <div class="responsive-menu">
           <ul class="clearfix">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="vente.html">Vente</a></li>
-            <li><a href="location.html">Location</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><ahref="vente.html">Vente</ahref=></li>
+            <li><ahref="location.html">Location</ahref=></li>
+            <li><ahref="contact.html">Contact</ahref=></li>
           </ul>
         </div>
       </nav>
@@ -48,10 +48,10 @@ class Header extends HTMLElement {
     </div>
     
     <nav class="menu">
-        <a href="contact.html">CONTACT</a>
-        <a href="location.html">LOCATION</a>
-        <a href="vente.html">VENTE</a>
-        <a href="index.html">ACCUEIL</a>
+        <a class="contactmenu" href="contact.html">CONTACT</a>
+        <a class="locationmenu"  href="location.html">LOCATION</a>
+        <a  class="ventemenu" href="vente.html">VENTE</a>
+        <a  class="accueilmenu" href="index.html">ACCUEIL</a>
     </nav>
     
     <div class="bannierecontact"></div>
